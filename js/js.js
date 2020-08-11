@@ -191,11 +191,6 @@ var is_phone_nav = false;
 
 
 
-// head_img = document.querySelector("#home img");
-
-
-
 document.addEventListener("DOMContentLoaded", init);
-// window.onload = function() {head_img_blur_init()};
 
-// head_img = document.querySelector("#home img");
+
