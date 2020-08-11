@@ -1,0 +1,191 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: DimGray;
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-origin: border-box;
+}
+
+#home {
+    display: flex;
+    max-height: 40vh;
+    background-color: DimGray;
+}
+
+#home div {
+    width: 100%;
+}
+
+#home img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* -------------------------------------------------- */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: DimGray;
+    z-index: 1;
+}
+
+.navbar .menubtn {
+    width: 100%;
+    padding: 10px 0;
+    color: Ivory;
+    text-align: center
+}
+
+.navbar:hover nav {
+    visibility: visible;
+}
+
+.navbar nav {
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: Gray;
+    flex-wrap: wrap;
+}
+
+.navbar nav a{
+    padding: 10px;
+    display: inline-block; /* inline is default */
+    text-decoration: none;
+    color: Ivory;
+    text-align: center
+}
+
+.navbar nav a:hover {
+    text-decoration: underline overline;
+}
+
+/* -------------------------------------------------- */
+
+.testrow {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+    padding: calc(20px + 1em) 0;
+}
+
+.testcol1 {
+    flex-basis: 100%;
+}
+
+.testcol3 {
+    flex-basis: 33%;
+}
+
+.testcol {
+    flex-grow: 0;
+    display: flex;
+    align-items: stretch;
+}
+
+.testbox {
+    background-color: rgb(211,211,211,.75);
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+/* -------------------------------------------------- */
+
+.testboxtxt {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.boxtxt {
+    padding: 10px;
+    width: 100%;
+}
+
+/* -------------------------------------------------- */
+
+#mapid {
+    height: 50vh;
+}
+
+/* -------------------------------------------------- */
+
+footer {
+    padding: 10px;
+    text-align: right;
+    background-color: DimGray;
+    color: Ivory;
+}
+
+/* -------------------------------------------------- */
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+p, h3 {
+    margin: 0;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+hr {
+    height:5px;
+    border-width:0;
+    background-color: DimGray;
+}
+
+/* -------------------------------------------------- */
+
+@media screen and (max-width: 900px) {
+    .testcol3 {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .testcol3 {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .testrow {
+        padding: calc(20px + 1em) 10%;
+    }
+}
+
+/* -------------------------------------------------- */
+
+#welcome {
+	background-image: url("../img/bike1.png");
+}
+
+#contact {
+	background-image: url("../img/bike2.png");
+}
+
+/* -------------------------------------------------- */
+
+
+
+
+
