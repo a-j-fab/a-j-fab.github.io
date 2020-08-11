@@ -2,8 +2,8 @@
 function init() {
     
     navbar_init();
-    map_init();
     head_img_blur_init();
+    map_init();
     createObserver();
     
 }
