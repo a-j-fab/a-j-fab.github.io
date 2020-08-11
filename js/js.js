@@ -2,7 +2,7 @@
 function init() {
     
     navbar_init();
-    head_img_blur_init();
+    get_head_img();
     map_init();
     createObserver();
     
@@ -118,10 +118,12 @@ function map_init() {
 }
 
 
-
-function head_img_blur_init() {
+function get_head_img() {
     
     head_img = document.querySelector("#home img");
+    
+}
+function head_img_blur_init() {
     
     head_img_blur = document.createElement("IMG");
     head_img_blur.setAttribute("src",head_img.getAttribute("src"));
@@ -189,6 +191,6 @@ var is_phone_nav = false;
 
 
 document.addEventListener("DOMContentLoaded", init);
-window.addEventListener("load", head_img_blur_resize);
-
+// window.addEventListener("load", head_img_blur_resize);
+head_img.onload = function() {head_img_blur_init()};
 
