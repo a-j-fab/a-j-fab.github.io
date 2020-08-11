@@ -191,6 +191,5 @@ var is_phone_nav = false;
 
 
 document.addEventListener("DOMContentLoaded", init);
-// window.addEventListener("load", head_img_blur_resize);
 head_img.onload = function() {head_img_blur_init()};
 
